@@ -23,3 +23,14 @@ Aby skompilowac program z domyslnymi ustawieniami (kind realow = 8) nalezy wykor
 `make kind8`
 `make kind16`
 a nastêpnie, w taki sam sposob jak w opcji domyœlnej, podac gestosc siatki podzialu. :)
+
+#### Wyniki
+
+Ponizej przedstawiam wykresy zaleznosci bledu obliczen od wyboru gestosci siatki podzialu dziedziny problemu (w zakresie [10,2560] o skali logarytmicznej o podstawie 2) dla trzech precyzji zmiennych uzytyh w obliczeniach.
+
+##### kind = 4
+![kind4-chart](https://github.com/StanikLukasz/FDM-fortran/blob/master/charts/kind4-chart.PNG)
+##### kind = 8
+![kind8-chart](https://github.com/StanikLukasz/FDM-fortran/blob/master/charts/kind8-chart.PNG)
+##### kind = 16
+![kind16-chart](https://github.com/StanikLukasz/FDM-fortran/blob/master/charts/kind16-chart.PNG)
