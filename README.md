@@ -1,0 +1,1 @@
+Some academic exercises. FDM in fortran.
