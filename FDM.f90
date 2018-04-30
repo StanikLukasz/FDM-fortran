@@ -59,8 +59,14 @@ program main
     
     
     ! results
+    
+#if !defined(TOFILE)
     write(*,*) e / N
     write(*,*) X
+#else
+    write(*,*) e / N, N
+#endif
+    
     
     
 end program main
