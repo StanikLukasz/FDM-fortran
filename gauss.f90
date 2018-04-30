@@ -1,3 +1,7 @@
+#if !defined(KINDp)
+#define KINDp 8
+#endif
+    
 module gauss
     implicit none
     
@@ -8,10 +12,10 @@ contains
         
         ! variables
         integer (kind = 8), intent(in) :: N
-        real (kind = 8), intent(inout) :: A(N,N), X(N) ! for now: kind = 8
+        real (kind = KINDp), intent(inout) :: A(N,N), X(N)
         
         integer (kind = 8) :: I, J
-        real (kind = 8) :: C ! the same
+        real (kind = KINDp) :: C
         
         
         ! algorithm

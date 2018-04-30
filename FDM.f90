@@ -1,3 +1,7 @@
+#if !defined(KINDp)
+#define KINDp 8
+#endif
+    
 program main
     use gauss
     implicit none
@@ -6,10 +10,10 @@ program main
     ! variables
     character (len=16) :: arg
     integer (kind = 8) :: I, N
-    real (kind = 8), allocatable, dimension(:) :: X ! just to show tho different ways to set dimension
-    real (kind = 8), allocatable :: A(:,:)
-    real (kind = 8) :: h ! all these reals have kind = 8 just for now
-    real (kind = 8) :: e ! error amount
+    real (kind = KINDp), allocatable, dimension(:) :: X ! just to show tho different ways to set dimension
+    real (kind = KINDp), allocatable :: A(:,:)
+    real (kind = KINDp) :: h
+    real (kind = 16) :: e ! error amount
     
     
     ! getting argument - number of division points
@@ -60,11 +64,3 @@ program main
     
     
 end program main
-    
-    
-    
-    
-    
-    
-    
-    
