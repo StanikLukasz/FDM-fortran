@@ -1,1 +1,3 @@
-Some academic exercises. FDM in fortran.
+# Some academic exercises. FDM in fortran.
+
+## *How to markdown* - experiments
